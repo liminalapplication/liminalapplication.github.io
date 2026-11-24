@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Liminal</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #0b1120; --card: #111827; --border: #1e293b; --text: #f8fafc; --muted: #94a3b8; --accent: #38bdf8; }
+    @media (prefers-color-scheme: light) {
+      :root { --bg: #f8fafc; --card: #ffffff; --border: #e2e8f0; --text: #0f172a; --muted: #475569; --accent: #0284c7; }
+    }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+    main { max-width: 780px; margin: 40px auto; padding: 0 20px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 32px; }
+    h1 { margin-top: 0; font-size: 1.85rem; }
+    h2 { margin-top: 28px; font-size: 1.15rem; color: var(--accent); }
+    p, li { color: var(--text); font-size: 0.96rem; }
+    .meta { color: var(--muted); font-size: 0.9rem; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <h1>Privacy Policy for Liminal</h1>
+      <p class="meta">Effective Date: November 24, 2026 · App Package: <code>com.liminal.antigravity</code></p>
+
+      <p>Liminal ("we", "our", or "the App") is a privacy-first personal knowledge vault built to store your saved links, notes, photos, and voice memos locally on your device. This Privacy Policy explains what data we collect, how it is used, and your rights.</p>
+
+      <h2>1. Local-First Storage</h2>
+      <p>Your saved links, notes, images, voice recordings, tags, and Locked Vault items are stored locally on your Android device in an app-private SQLite database. Locked Vault items are excluded from AI chat/podcast indexing and are never transmitted to AI providers.</p>
+
+      <h2>2. Optional Google Sign-In &amp; Cloud Sync</h2>
+      <p>If you choose to sign in with Google and enable Cloud Sync, we receive your Google Account ID, display name, email address, and profile photo solely to authenticate you and sync your vault backups to your personal Google Drive AppData folder (accessible only by Liminal on your signed-in account). You may skip sign-in and use Liminal completely offline.</p>
+
+      <h2>3. AI Features (Google Gemini API &amp; Managed Proxy)</h2>
+      <p>When you actively invoke cloud AI features (Ask Echo chat, AI Podcasts, Space Synthesis, or Cloud Auto-Summaries), only the relevant non-locked vault text/context needed to fulfill your request is transmitted over HTTPS to Google's Gemini API (via our Cloudflare Workers quota proxy or, for Pro Lifetime users using BYOK, directly using your personal API key). Cloud AI requests are processed ephemerally to generate your response and track your anonymous micro-USD usage quota; we do not sell your content or use it for advertising.</p>
+      <p>Pro Lifetime users who download an optional on-device local AI model process prompts 100% locally on device with zero cloud transfer.</p>
+
+      <h2>4. Crash Reporting &amp; Privacy-First Analytics</h2>
+      <p>Liminal uses Firebase Crashlytics and Firebase Analytics (with Advertising ID / AAID collection disabled in the app manifest) to measure app stability and anonymized feature usage. Personal URLs, note text, and vault contents are never logged to analytics. You can turn off Anonymous Usage Analytics at any time in <strong>Settings</strong>.</p>
+
+      <h2>5. Subscriptions &amp; Payments</h2>
+      <p>All subscriptions, Lifetime unlocks, and Extra AI Boost purchases are processed securely by Google Play Billing. We never collect or store your credit card, UPI, or bank details.</p>
+
+      <h2>6. Data Retention &amp; Deletion</h2>
+      <p>You can delete all cloud-synced data at any time in-app via <strong>Settings &rarr; Delete Cloud Data &amp; Sign Out</strong>, uninstall the app to remove local data, or request full deletion of any server quota/account records via our <a href="../delete-account/">Account &amp; Data Deletion page</a> or by emailing <a href="mailto:liminal.application@gmail.com">liminal.application@gmail.com</a>.</p>
+
+      <h2>7. Children's Privacy</h2>
+      <p>Liminal is not directed at children under 13 (or the minimum age in your jurisdiction), and we do not knowingly collect personal information from children.</p>
+
+      <h2>8. Contact Us</h2>
+      <p>For privacy questions or data requests, email <a href="mailto:liminal.application@gmail.com">liminal.application@gmail.com</a>.</p>
+    </div>
+  </main>
+</body>
+</html>

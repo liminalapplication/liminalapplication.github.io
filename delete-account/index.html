@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account &amp; Data Deletion — Liminal</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #0b1120; --card: #111827; --border: #1e293b; --text: #f8fafc; --muted: #94a3b8; --accent: #38bdf8; }
+    @media (prefers-color-scheme: light) {
+      :root { --bg: #f8fafc; --card: #ffffff; --border: #e2e8f0; --text: #0f172a; --muted: #475569; --accent: #0284c7; }
+    }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+    main { max-width: 780px; margin: 40px auto; padding: 0 20px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 32px; }
+    h1 { margin-top: 0; font-size: 1.85rem; }
+    h2 { margin-top: 24px; font-size: 1.15rem; color: var(--accent); }
+    p, li { color: var(--text); font-size: 0.96rem; }
+    .meta { color: var(--muted); font-size: 0.9rem; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <h1>Account &amp; Data Deletion — Liminal</h1>
+      <p class="meta">App Package: <code>com.liminal.antigravity</code> · Developer: Liminal Labs</p>
+
+      <h2>Option 1: Delete Immediately Inside the App</h2>
+      <ol>
+        <li>Open <strong>Liminal</strong> on your Android device.</li>
+        <li>Go to <strong>Settings &rarr; Cloud Sync &amp; Account</strong>.</li>
+        <li>Tap <strong>Delete Cloud Data &amp; Sign Out</strong> and confirm.</li>
+      </ol>
+      <p>This immediately purges your synced vault data from your Google Drive AppData folder and signs your Google account out of the app. To remove local data stored on your phone, uninstall Liminal or clear app storage in Android Settings.</p>
+
+      <h2>Option 2: Request Deletion via Web / Email</h2>
+      <p>If you no longer have the app installed and want us to purge your server-side AI quota ledger or account metadata, send an email to <a href="mailto:liminal.application@gmail.com?subject=Liminal%20Data%20Deletion%20Request">liminal.application@gmail.com</a> from your signed-in Google email address with the subject <strong>"Liminal Data Deletion Request"</strong>.</p>
+      <ul>
+        <li><strong>Data deleted:</strong> Server-side AI quota counters, associated Firebase authentication/account identifiers, and cloud sync references.</li>
+        <li><strong>Data retained:</strong> Only anonymized aggregate crash/billing records required by Google Play or tax law (retained per statutory obligations, with no personal vault content).</li>
+        <li><strong>Processing time:</strong> Completed within <strong>7 days</strong> of request verification.</li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>
